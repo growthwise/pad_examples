@@ -20,7 +20,7 @@ Save this file somewhere as you will need it later
 
 *Set up the flow*
 
-Open power automate and create a new flow
+Open power automate and create a new flow - make sure you **toggle PowerFX to be on** when you create the flow.
 
 Go to this page https://github.com/growthwise/pad_examples/blob/main/super_overall_liability 
 
