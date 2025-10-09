@@ -16,6 +16,8 @@ When you login to Xero, the shortcode is this part of the URL https://go.xero.co
 
 The organisation name should just be the organisation name you wish to use. 
 
+See https://github.com/growthwise/pad_examples/blob/main/super_urls.csv as an example, you will need to update the data accordingly to your orgnaisations and shortcodes
+
 Save this file somewhere as you will need it later
 
 *Set up the flow*
