@@ -24,7 +24,7 @@ You can download that file and update it according to your own needs (note: you'
 
 Open power automate and create a new flow - make sure you **toggle PowerFX to be on** when you create the flow.
 
-Go to this page [(ttps://github.com/growthwise/pad_examples/blob/main/super_check_bot]
+Go to this page https://github.com/growthwise/pad_examples/blob/main/super_check_bot
 
 Copy and paste the data from it into your new flow.
 
