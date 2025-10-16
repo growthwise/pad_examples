@@ -81,5 +81,8 @@ You could also do something like change the browser to be Chrome instead of Edge
 
 Enjoy Building, and share what you create :-)
 
-*If this repo has been helpful go check out our Youtube channel www.youtube.com/@growthwise or connect with me on Linkedin https://www.linkedin.com/in/beaugaudron/*
-*www.growthwwise.com.au*
+*If this repo has been helpful go check out our socials: 
+
+- Youtube channel www.youtube.com/@growthwise
+- Connect with me on Linkedin https://www.linkedin.com/in/beaugaudron/*
+- Visit us on the web *www.growthwwise.com.au*
