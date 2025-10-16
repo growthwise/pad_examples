@@ -4,7 +4,7 @@ This repository is for sharing Power Automate flows designed for Xero Accounting
 
 # Superannuation Check Bot #
 
-*Getting Started*
+## Getting Started ##
 
 To setup this flow you need the following:
 
@@ -20,7 +20,7 @@ See https://github.com/growthwise/pad_examples/blob/main/super_urls.csv as an ex
 
 You can download that file and update it according to your own needs (note: you'll need it later in these instructions)
 
-*Seting up the flow*
+## Seting up the flow ##
 
 Open power automate and create a new flow - make sure you **toggle PowerFX to be on** when you create the flow.
 
@@ -28,7 +28,7 @@ Go to this page https://github.com/growthwise/pad_examples/blob/main/super_check
 
 Copy and paste the data from it into your new flow.
 
-*Fixing the Element Selections*
+## Fixing the Element Selections ##
 
 PowerAutomate desktop to the best of my knowledge does not have a way of actually sharing a flow like this with elements already preset - so follow the steps below to fix the errored steps, the errors are just because we need to teach powerautomate again the browser elements to target. 
 
@@ -50,7 +50,7 @@ Scroll over the relevane element and control + left click to select it.
 
 Repeat this for each required element in the steps listed above. 
 
-*Running the Flow*
+## Running the Flow ##
 
 Once you've got the elements sorted its time to click on "Run" 
 
