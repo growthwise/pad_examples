@@ -48,6 +48,8 @@ Click on Add UI Element
 
 Scroll over the relevane element and control + left click to select it. 
 
+*If you're not seeing the red boxes around the elements you may need to install the powerautomate extension. See here https://learn.microsoft.com/en-us/power-automate/desktop-flows/install-browser-extensions*
+
 Repeat this for each required element in the steps listed above. 
 
 ## Running the Flow ##
