@@ -77,6 +77,9 @@ Since we're using this as an example there are things that are shown like the di
 
 We've made this flow with expansion in mind, for example instead of just displaying the super liability amounts as a message - you could write them to a spreadsheet for all extracted results. 
 
+You could also do something like change the browser to be Chrome instead of Edge
+
 Enjoy Building, and share what you create :-)
 
 *If this repo has been helpful go check out our Youtube channel www.youtube.com/@growthwise or connect with me on Linkedin https://www.linkedin.com/in/beaugaudron/*
+*www.growthwwise.com.au*
