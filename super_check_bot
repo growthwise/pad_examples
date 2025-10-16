@@ -1,7 +1,8 @@
 Display.SelectDateDialog.SelectDate Title: $fx'Set Super Due Date End' Message: $fx'Pick the date you want the report for' DateDialogFormat: Display.DateDialogFormat.DateOnly IsTopMost: False SelectedDate=> SelectedDate ButtonPressed=> ButtonPressed
 Text.ConvertDateTimeToText.FromDateTime DateTime: $fx'=SelectedDate' StandardFormat: Text.WellKnownDateTimeFormat.ShortDate Result=> FormattedDateTime
 Display.ShowMessageDialog.ShowMessage Title: $fx'Date Set' Message: $fx'date text is ${FormattedDateTime}' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed3
-File.ReadFromCSVFile.ReadCSV CSVFile: $fx'C:\\Users\\beau\\Documents\\VSCode Projects\\power_automate\\super_urls.csv' Encoding: File.CSVEncoding.UTF8 TrimFields: True FirstLineContainsColumnNames: True ColumnsSeparator: File.CSVColumnsSeparator.SystemDefault CSVTable=> CSVTable
+Display.SelectFileDialog.SelectFile Title: $fx'Select CSV File' FileFilter: $fx'*.csv' IsTopMost: False CheckIfFileExists: True SelectedFile=> SelectedFile ButtonPressed=> ButtonPressed6
+File.ReadFromCSVFile.ReadCSV CSVFile: $fx'=SelectedFile' Encoding: File.CSVEncoding.UTF8 TrimFields: True FirstLineContainsColumnNames: True ColumnsSeparator: File.CSVColumnsSeparator.SystemDefault CSVTable=> CSVTable
 Variables.RetrieveDataTableColumnIntoList DataTable: $fx'=CSVTable' ColumnNameOrIndex: $fx'1' ColumnAsList=> orgname
 Variables.RetrieveDataTableColumnIntoList DataTable: $fx'=CSVTable' ColumnNameOrIndex: $fx'2' ColumnAsList=> shortcodes
 WebAutomation.LaunchEdge.LaunchEdge Url: $fx'https://login.xero.com' WindowState: WebAutomation.BrowserWindowState.Normal ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: $fx'=60' Timeout: $fx'=60' PiPUserDataFolderMode: WebAutomation.PiPUserDataFolderModeEnum.AutomaticProfile TargetDesktop: $fx'{"DisplayName":"Local computer","Route":{"ServerType":"Local","ServerAddress":""},"DesktopType":"local"}' BrowserInstance=> Browser
@@ -9,6 +10,12 @@ LOOP FOREACH CurrentItem IN $fx'=shortcodes'
     SET url TO $fx'https://payroll.xero.com/PayRun/Payments/New?CID=${CurrentItem}'
     Display.ShowMessageDialog.ShowMessage Title: $fx'URL' Message: $fx'=url' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed2
     WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: $fx'=Browser' Url: $fx'=url' WaitForPageToLoadTimeout: $fx'=60'
+    WebAutomation.PopulateTextField.PopulateTextFieldUsePhysicalKeyboard BrowserInstance: $fx'=Browser' Control: appmask['Web Page \'h ... CID=!TEST\'']['Input text \'endDates\''] Text: $fx'=FormattedDateTime' Mode: WebAutomation.PopulateTextMode.Replace UnfocusAfterPopulate: True WaitForPageToLoadTimeout: $fx'=60'
+    WebAutomation.Click.Click BrowserInstance: $fx'=Browser' Control: appmask['Web Page \'h ... CID=!TEST\'']['Anchor \'View\''] ClickType: WebAutomation.ClickType.LeftClick MouseClick: True WaitForPageToLoadTimeout: $fx'=60' MousePositionRelativeToElement: WebAutomation.RectangleEdgePoint.MiddleCenter OffsetX: $fx'=0' OffsetY: $fx'=0'
+    WAIT $fx'=3'
+    WebAutomation.SetCheckboxState.SetCheckboxState BrowserInstance: $fx'=Browser' Control: appmask['Web Page \'h ... CID=!TEST\'']['Span \'gridcolumn-1018-textEl\''] State: WebAutomation.CheckboxState.Checked WaitForPageToLoadTimeout: $fx'=60'
     WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: $fx'=Browser' ExtractionParameters: {[$fx'html > body > div:eq(4) > div:eq(2) > section > div:eq(1) > div > span', $fx'Own Text', $fx''] } TimeoutInSeconds: $fx'=60' ExtractedData=> OverallLiability
+    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: $fx'=Browser' ExtractionParameters: {[$fx'html > body > div:eq(4) > div:eq(2) > section > div:eq(0) > div > span > div > table > tbody > tr > td:eq(1) > div', $fx'Own Text', $fx''] } TimeoutInSeconds: $fx'=60' ExtractedData=> QuarterLiability
+    Display.ShowMessageDialog.ShowMessage Title: $fx'To Date Liability' Message: $fx'=QuarterLiability' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed5
     Display.ShowMessageDialog.ShowMessage Title: $fx'Overall Super Liability' Message: $fx'=OverallLiability' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed4
 END
