@@ -32,7 +32,7 @@ Copy and paste the data from it into your new flow.
 
 PowerAutomate desktop to the best of my knowledge does not have a way of actually sharing a flow like this with elements already preset - so follow the steps below to fix the errored steps, the errors are just because we need to teach powerautomate again the browser elements to target. 
 
-We also have a video on how to complete this here: [insert youtube url]
+We also have a video on how to complete this here: https://youtu.be/DRQm2VSXDx0?si=m3-kXvYz8_t5_HoC
 
 Open Microsoft Edge and the login to Xero - this will allow you to use power automates UI Element Picker
 
