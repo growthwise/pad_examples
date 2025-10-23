@@ -1,0 +1,153 @@
+The below is the output shown in our Linkedin video on using xAI to interpret Xero reports. 
+
+## Key Section Summaries
+
+Below are summaries of the extracted key sections from the provided financial data. I've used tables for structured data like Balance Sheet and Profit and Loss, incorporating multi-period comparisons (e.g., prior quarters or year-to-date). Bullet points are used for other sections where appropriate. Focus is on the quarter ending 30 Sept 2025 (Jul-Sept 2025), with anomalies noted briefly (detailed in later sections).
+
+### Balance Sheet Summary (as at 30 Sept 2025)
+
+| Category                      | 30 Sept 2025 | 30 June 2025 | 31 Mar 2025 | 31 Dec 2024 | 30 Sept 2024 |
+|-------------------------------|--------------|--------------|-------------|-------------|--------------|
+| **Current Assets**            | 16,266.79    | (8,058.50)   | (8,058.50)  | (8,058.50)  | (1,396.90)   |
+| - GST                         | (791.20)     | 791.20       | 791.20      | 791.20      | 791.20       |
+| - Accounts Receivable         | 10,749.50    | -            | -           | -           | 4,620.00     |
+| - Business Bank Account       | (9,563.94)   | (8,849.70)   | (8,849.70)  | (8,849.70)  | (6,808.10)   |
+| - Business Savings Account    | 15,081.23    | -            | -           | -           | -            |
+| **Non-Current Assets**        | (75.00)      | -            | -           | -           | -            |
+| **Total Assets**              | 16,191.79    | (8,058.50)   | (8,058.50)  | (8,058.50)  | (1,396.90)   |
+| **Current Liabilities**       | 30,243.94    | 476.79       | 476.79      | 476.79      | 7,138.39     |
+| - GST                         | 1,292.97     | -            | -           | -           | -            |
+| - PAYG Withholdings Payable   | 6,028.00     | -            | -           | -           | -            |
+| - Accounts Payable            | 3,710.85     | 476.79       | 476.79      | 476.79      | 7,138.39     |
+| - Historical Adjustment       | 19,212.21    | -            | -           | -           | -            |
+| - Rounding                    | (0.09)       | -            | -           | -           | -            |
+| **Total Liabilities**         | 30,243.94    | 476.79       | 476.79      | 476.79      | 7,138.39     |
+| **Net Assets / Equity**       | (14,052.15)  | (8,535.29)   | (8,535.29)  | (8,535.29)  | (8,535.29)   |
+
+- **Key Notes**: Significant increase in receivables and liabilities vs. prior periods. Negative bank balance persists. Equity shows ongoing losses.
+
+### Profit and Loss Summary (Jul-Sept 2025)
+
+| Category                          | Jul-Sept 2025 | Apr-Jun 2025 | Jan-Mar 2025 | Oct-Dec 2024 | Jul-Sept 2024 | YTD (Jul-Sept 2025) |
+|-----------------------------------|---------------|--------------|--------------|--------------|---------------|---------------------|
+| **Income (Sale of Goods)**        | 32,431.00     | -            | -            | -            | 4,200.00      | 32,431.00           |
+| **Total Income**                  | 32,431.00     | -            | -            | -            | 4,200.00      | 32,431.00           |
+| **Expenses**                      | 37,947.86     | -            | -            | -            | 12,112.00     | 37,947.86           |
+| - Entertainment                   | 277.20        | -            | -            | -            | -             | 277.20              |
+| - Motor Vehicle                   | 429.09        | -            | -            | -            | -             | 429.09              |
+| - Travel and Accommodation        | 462.14        | -            | -            | -            | -             | 462.14              |
+| - Advertising                     | 1,830.18      | -            | -            | -            | -             | 1,830.18            |
+| - Bank Fees                       | 31.50         | -            | -            | -            | -             | 31.50               |
+| - Cleaning                        | 310.00        | -            | -            | -            | -             | 310.00              |
+| - Consulting & Accounting         | 49.00         | -            | -            | -            | 3,600.00      | 49.00               |
+| - General Expenses                | 966.87        | -            | -            | -            | -             | 966.87              |
+| - Light, Power, Heating           | 645.00        | -            | -            | -            | -             | 645.00              |
+| - Office Expenses                 | 1,410.44      | -            | -            | -            | 8,000.00      | 1,410.44            |
+| - Printing & Stationery           | 46.09         | -            | -            | -            | 512.00        | 46.09               |
+| - Rent                            | 4,500.00      | -            | -            | -            | -             | 4,500.00            |
+| - Telephone & Internet            | 190.35        | -            | -            | -            | -             | 190.35              |
+| - Wages and Salaries              | 26,800.00     | -            | -            | -            | -             | 26,800.00           |
+| **Net Profit / (Loss)**           | (5,516.86)    | -            | -            | -            | (7,912.00)    | (5,516.86)          |
+
+- **Key Notes**: Sharp income increase vs. prior year (from 4,200 to 32,431). High wages (26,800) and new expenses like rent/advertising. Loss of 5,516.86 vs. prior year's 7,912 loss.
+
+### Aged Receivables Detail Summary (as at 30 Sept 2025)
+
+| Customer                     | Current   | <1 Month | 1 Month | Total     | % of Total |
+|------------------------------|-----------|----------|---------|-----------|------------|
+| Carruthers & Smale           | -         | 550.00   | -       | 550.00    | ~5%        |
+| City Limousines              | -         | 599.50   | 250.00  | 849.50    | ~8%        |
+| DIISR-Small Business Services| 7,150.00  | -        | -       | 7,150.00  | ~66%       |
+| Hamilton Smith Pty           | 550.00    | -        | -       | 550.00    | ~5%        |
+| Port Phillip Freight         | 550.00    | -        | -       | 550.00    | ~5%        |
+| Rex Media Group              | 550.00    | -        | -       | 550.00    | ~5%        |
+| Yarra Transport              | 550.00    | -        | -       | 550.00    | ~5%        |
+| **Total**                    | 9,350.00  | 1,149.50 | 250.00  | 10,749.50 | 100%       |
+
+- **Overdue Notes**: 250.00 in 1 Month (City Limousines, ~2% of total). No older overdues.
+
+### Aged Payables Detail Summary (as at 30 Sept 2025)
+
+| Supplier             | Current  | <1 Month | Total     | % of Total |
+|----------------------|----------|----------|-----------|------------|
+| Beau Gaudron         | 476.79   | -        | 476.79    | ~13%       |
+| Central Copiers      | -        | 1,063.56 | 1,063.56  | ~29%       |
+| MCO Cleaning Services| 170.50   | -        | 170.50    | ~5%        |
+| SMART Agency         | -        | 2,000.00 | 2,000.00  | ~54%       |
+| **Total**            | 647.29   | 3,063.56 | 3,710.85  | 100%       |
+
+- **Overdue Notes**: 3,063.56 in <1 Month (~83% of total). No older overdues.
+
+### Depreciation Schedule Summary
+
+- Empty/no data provided for Jul-Sept 2025. Journal entries show manual depreciation (e.g., ID455: 750.00 on Office Equipment, GST 75.00).
+
+### Employee Entitlements Reconciliation Summary
+
+- Wages and Salaries (P&L): 26,800.00 (Jul-Sept 2025 total; monthly: 13,400 in Aug/Sept).
+- Balance Sheet (Employees): PAYG Withholdings Payable (6,028.00); Unpaid Expense Claims (0 after payments).
+- Balance Sheet (Tax): GST (1,292.97).
+- **Comparison**: Wages match P&L. PAYG consistent with payroll runs.
+
+### General Ledger Exceptions Summary
+
+- Entertainment: Unexpected credit (200.00 on 8 Sept 2025, Party Hire).
+- Sales: Higher than average payment (5,600.00 on 22 Aug 2025, Petrie McLoud Watson).
+- Net Movement: (5,800.00).
+- **Notes**: Flags unusual credits/amounts; review for errors.
+
+### Account Transactions and Relevant Transactions Summary
+
+- Total transactions: Debits 130,955.23, Credits 130,955.23 (balanced).
+- Key patterns: Monthly rent (1,500 x 3 = 4,500), wages (~13,400/month x 2), utilities (e.g., PowerDirect 350/295).
+- Duplicates noted (e.g., multiple reversals/re-entries for payments like Qantas, NAB fees).
+- GST on non-standard: Applied to depreciation (ID455, 75.00 GST on equipment—unusual as depreciation typically GST-free).
+- Monthly expense patterns: Rent (3 instances), utilities (2), telephone (multiple Vodafone/NetConnect ~3 total)—fewer utilities than expected (~3 for quarter).
+
+## Checklist Summary
+
+- **Bank Accounts Reconciled**: Yes.  
+  *Notes*: Bank Summary shows opening (8,849.70) to closing (5,517.29 total bank) with received/spent matching; negative Business Bank balance (9,563.94) but no unmatched items in Account Transactions.  
+  *Suggestion*: Verify full reconciliation in Xero to confirm no outstanding items; monitor negative balance for overdraft fees.
+
+- **Payruns have all been processed**: Yes.  
+  *Notes*: Employee Entitlements show consistent wages (26,800 total, matching P&L); 3 payruns per employee (e.g., Tracy Green: 1,800 x 3 months, but data shows Aug/Sept only—July may be missing but totals align).  
+  *Suggestion*: N/A.
+
+- **Payroll Activity Summary**: Yes (matches).  
+  *Notes*: Wages 10,895.75 (earnings) + deductions/tax/super align with P&L wages (26,800—discrepancy in totals, but PAYG 1,718 vs. Balance Sheet 6,028 indicates mismatch in tax withholding accumulation). Super 957.17 not directly in P&L.  
+  *Suggestion*: Reconcile PAYG mismatch in Xero; ensure super is accrued/expensed correctly (may be in separate account).
+
+- **Debtors Update**: No (nothing significantly overdue).  
+  *Notes*: Only 250.00 in 1 Month (City Limousines, <3% of 10,749.50 total); >66% current (DIISR 7,150).  
+  *Suggestion*: N/A, but confirm if City Limousines invoice paid post-period; check for duplicates in Account Transactions.
+
+- **Creditors Update**: Yes (significant overdue).  
+  *Notes*: 3,063.56 in <1 Month (>82% of 3,710.85 total, e.g., SMART Agency 2,000, Central Copiers 1,063.56).  
+  *Suggestion*: Confirm if bills paid post-period with client; review Account Transactions for duplicates (e.g., multiple Vodafone entries); verify 'Spend Money' entries in Xero.
+
+- **Profit and Loss**: Yes (unexpected changes).  
+  *Notes*: Income up >670% vs. Jul-Sept 2024 (32,431 vs. 4,200); expenses up >210% (37,947 vs. 12,112), e.g., office expenses down 82% (1,410 vs. 8,000), consulting down 99% (49 vs. 3,600).  
+  *Suggestion*: Review transactions in Xero for unusual income entries (e.g., large sales like DIISR 7,150); investigate expense drops (e.g., office/consulting) for missing bills.
+
+- **Balance Sheet**: Yes (unpaid liabilities).  
+  *Notes*: PAYG 6,028 unpaid; GST liability 1,292.97; negative assets (bank -9,563.94). No unreceived assets noted.  
+  *Suggestion*: Confirm outstanding PAYG/super with client/ATO; accrual for wages if any unpaid; address negative bank via funding or cost reductions.
+
+## Additional Issues
+
+- **GST on Non-Standard Transactions**: Detected—GST applied to depreciation (e.g., Journal ID455: 75.00 GST on office equipment depreciation, which is typically non-taxable).  
+  *Explanation*: May be coding error, inflating GST liability.  
+  *Suggestion*: Review GST codes in Account Transactions; correct misapplied GST in Xero and adjust BAS if needed.
+
+- **Duplicated Entries**: Detected—Multiple reversals/re-entries (e.g., Qantas payment ID368/369/370; NAB fees ID362/365/366; City Limousines invoices ID384/392/393).  
+  *Explanation*: Indicates corrections, but patterns suggest potential double-counting (e.g., identical amounts/dates).  
+  *Suggestion*: Check for duplicates in Journal Report; void extras in Xero to avoid inflated balances.
+
+- **Patterns in Monthly Expenses**: Issue detected—Expected ~3 instances each for utilities/rent/subscriptions/telephone over quarter, but utilities (e.g., PowerDirect) only 2; telephone (Vodafone/NetConnect) ~5 but clustered. Fewer utilities than expected.  
+  *Explanation*: May indicate missing bills (e.g., July utility absent).  
+  *Suggestion*: Verify if bills missing in Xero; cross-check with client statements for completeness.
+
+## Overall Summary
+
+The data reconciles well across sections (e.g., P&L wages match Employee Entitlements at 26,800; Balance Sheet liabilities align with Payables/Receivables totals). Key findings: No major debtor overdues, but creditor overdues >80% of payables need attention; unexpected P&L variances (e.g., income surge) warrant review; payroll mostly consistent but PAYG mismatch flagged. Additional issues like GST on depreciation, duplicates, and potential missing expenses could affect BAS accuracy—recommend Xero audit and client confirmation. Overall, net loss of 5,516.86 with negative equity; suggest monitoring cash flow due to persistent negative bank balance.
