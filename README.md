@@ -1,4 +1,4 @@
-# Power Automate Exmaples #
+# Power Automate Examples #
 
 This repository is for sharing Power Automate flows designed for Xero Accounting
 
